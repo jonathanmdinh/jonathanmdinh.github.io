@@ -1,0 +1,38 @@
+.container {
+    max-width: 550px; /*If you have the space, take up at most 550px.*/
+    height: 100vh; /*viewport height; will take up 100% of the VIEWPORT height*/
+    border: 1px solid black;
+    margin: 0 auto; /*will have to automatically center the container from left-to-right*/
+    display: grid;
+    grid-template-rows:20% 80%; /*top row will be 20%, second row will be 80%*/
+    text-align: center;
+
+}
+
+h1 , h2, h3, span {
+	margin: 0;
+}
+
+h1 {
+	font-size: 16rem; /*rem: relative em, so that is it relative to the browser's default font size*/
+}
+
+h2 {
+	font-size: 3rem;
+}
+
+h3 {
+	font-size: 1.4rem;
+}
+
+span {
+	font-size: 6rem;
+	font-weight: 600;
+}
+
+.degrees {
+    display: grid;
+    grid-template-columns:auto auto; /*the degree number and symbol are allowed to take up as much space as necessary*/
+    justify-content: center;
+    margin-left: 2rem;
+}
