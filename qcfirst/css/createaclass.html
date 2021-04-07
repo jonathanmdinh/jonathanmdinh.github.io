@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset = utf-8 />
+        <title>Create A Class</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/styles.css">
+        <script src="script.js"></script>
+    </head>
+
+    <body>
+        <header>
+            <img src="img/qc_logo.jpg" alt="Queens College logo"> <!--QC Logo will appear on every webpage-->
+        </header>
+
+        <div class="createaclass">
+            <h2>Create A Class</h2>
+            <!-- Form -->
+            <form action="#" method="post">
+                <!--Dropdown menu to select a semester-->
+                <div class="dropdown">
+                    <label for="semester-dropdown">Semester</label>
+                    <select name ="semester" id="semester-dropdown">
+                      <option value="summer2021">Summer 2021</option>
+                      <option value="fall2021">Fall 2021</option>
+                      <option value="winter2022">Winter 2022</option>
+                      <option value="spring2022">Spring 2022</option>
+                    </select>
+                </div>
+                <!--form fields for instructor to fill out-->
+                <label for="coursename">Course Name</label>
+                <input type="text" id="coursename" Name="course-name" placeholder="Course Name" required="">
+
+                <label for="department">Department</label>
+                <input type="text" id="department" name="department" placeholder="Department" required="">
+                
+                <label for="instructor">Instructor</label>
+                <input type="text" id="instructor" name="instructor" placeholder="Instructor" required="">
+
+                <label for="schedule">Schedule</label>
+                <input type="text" id="schedule" name="schedule" placeholder="Schedule" required="">
+
+                <label for="enrollment-deadline">Enrollment Deadline</label>
+                <input type="text" id="enrollment-deadline" name="enrollment-deadline" placeholder="Enrollment Deadline" required="">
+
+                <label for="capacity">Capacity</label>
+                <input type="number" id="capacity" name="capacity" placeholder="Capacity" required="">
+
+                <label for="description">Description</label>
+                <textarea id="description" name="Description" placeholder="Description" required="" rows="4" cols="50"></textarea>
+
+                <input type="submit" class="createaclassbtn" value="SUBMIT">
+            </form>
+            <!-- //Form -->
+        </div>
+    </body>
+</html>
+
+<!--Sources-->
+<!--https://learn.zybooks.com/zybook/CUNYCSCI355AbramovSpring2021/chapter/2/section/12?content_resource_id=45024666-->
+<!--https://learn.zybooks.com/zybook/CUNYCSCI355AbramovSpring2021/chapter/2/section/11-->
+<!--https://www.w3schools.com/tags/tag_textarea.asp-->

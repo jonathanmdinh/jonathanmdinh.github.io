@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset = utf-8 />
+        <title>Sign Up</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/styles.css">
+        <script src="script.js"></script>
+    </head>
+
+    <body>
+        <header>
+            <div class="header-left">
+                <img src="img/qc_logo.jpg" alt="Queens College logo"> <!--QC Logo will appear on every webpage-->
+            </div>
+            <div class="header-right">
+                <a href="https://jonathanmdinh.github.io/qcfirst/login">Login</a> 
+                <a href="https://jonathanmdinh.github.io/qcfirst/sign-up">Sign Up</a> 
+            </div>
+        </header>
+
+        <form action="#" method="post">
+            <!--Form fields for user to fill out to sign up-->
+            <div class="signup-container">
+                <label for="firstname"><b>First Name</b></label>
+                <input type="text" id="firstname" Name="firstname" placeholder="First Name" required="">
+
+                <label for="lastname"><b>Last Name</b></label>
+                <input type="text" id="lastname" Name="lastName" placeholder="First Name" required="">
+
+                <label for="emailaddress"><b>Email Address</b></label>
+                <input type="email" id="emailaddress" Name="emailaddress" placeholder="Email Address" required="">
+
+                <label for="password"><b>Password</b></label>
+                <input type="password" id="password" Name="password" placeholder="Password" required="">
+
+                <label for="confirmpassword"><b>Confirm Password</b></label>
+                <input type="password" id="confirmpassword" Name="confirmpassword" placeholder="Confirm Password" required="">
+
+                 <input type="submit" class="signupbtn" value="SIGN UP">
+            </div>
+        </form>
+    </body>
+</html>
+
+<!--Sources-->
+<!--https://learn.zybooks.com/zybook/CUNYCSCI355AbramovSpring2021/chapter/2/section/11-->
