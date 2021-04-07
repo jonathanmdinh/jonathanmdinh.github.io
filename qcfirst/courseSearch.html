@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head> 
+	  	<meta charset = UTF-8 />
+		<title>Student Center</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	</head>
+	<body>
+		<!--Page Header-->
+		<div class="topnav">
+			<!--QC Logo-->
+			<a href="Student Center.html" class="logo"> 
+				<img src="img/qc_logo.jpg" width=50 alt="QC Logo"/>
+			</a>
+			<!--Navigation Menu Stored in User Icon-->
+			<nav role="navigation" class="nav-menu">
+				<div class="dropdown">
+					<div class="dropdown-toggle">
+						<!--User Photo: https://stock.adobe.com/290580606?tduid=971268d0957d9995b1e6a74288ca7071&as_channel=affiliate&as_campclass=redirect&as_source=arvato&asset_id=290580351-->
+						<img src="img/User.png" width=50 alt="Profile Photo" /> 
+					</div>
+					<!--Links That Direct to Home (Student Center), Settings, and Sign Out (Homepage)-->
+					<nav class="dropdown-list">
+						<a href="studentCenter.html" class="dropdown-link">Home</a>
+						<a href="settings.html" class="dropdown-link">Settings</a>
+						<a href="index.html" class="dropdown-link">Sign Out</a>
+					</nav>
+				</div>
+			</nav>
+		</div>
+		<!--End of Page Header-->
+		<h1>Course Search</h1> <!--Page Heading-->
+		<!--Area Where User Enters and Submits Search Information (Subject/Course & Term/Semester)-->
+		<section class = "Search-Section"> 
+			<div class="form">
+				<form id="subject-form" name="subject-form">
+					<label for="Subject-Course"> Subject/Course</label>
+						<input type="text" name="Subject-Course" id="Subject-Course" placeholder="Enter a Subject or Course"/>
+					<label for="Term-Semester">Term/Semester</label>
+						<input type="text" name="Term-Semester" id="Term-Semester" placeholder="Enter a Term or Semester"/>
+					<input type="submit" value="Search" class="submit-button"/>
+				</form>
+			</div>
+		</section>
+		<!--Section Where Number of Matching Results are Shown-->
+		<section class="Result-Section">
+			<div class="search-output">
+				<h1>Search Results:</h1>
+				<h2>7 Course(s) Found</h2>
+			</div>
+		</section>
+		<!--Table That Displays Each Matching Course Result (Regardless if They Are Available or Not Available)-->
+		<table class="Class-Selection">
+			<tr>
+				<th>Course Name</th>
+				<th>Instructor</th>
+				<th>Course Days</th>
+				<th>Course Time</th>
+				<th>Availability</th>
+				<th>Notify Me!</th> <!--If Student Clicks on a Course's Notification Bell, it Notifies the Student if the Course Whenever the Course is Available or Not-->
+				<th></th> <!--This Column is for the Enroll Button-->
+			</tr>
+			<tr>
+				<td>CSCI 370: Software Engineering</td>
+				<td>Andy Abreu</div>
+				<td>Monday, Wednesday</div>
+				<td>6:30 PM - 7:45 PM</div>
+				<td> <img src="img/Red_Circle.png" height=40 width=40 alt="This Class is Currently Unavailable" class="availability-icon" /> </td>
+				<td> <a href="" class="notification"> <img src="img/notification-bell.png" alt="Notification Bell" class="notification-bell" width=30 height=30/> </a> </td>
+				<td> <a href="" class="enroll-button">Enroll</a> </td>
+			</tr>
+			<tr>
+				<td>CSCI 370: Software Engineering</div>
+				<td>Andy Abreu</div>
+				<td>Monday, Wednesday</div>
+				<td>8:00 PM - 9:15 PM</div>
+				<td> <img src="img/Red_Circle.png" height=40 width=40 alt="This Class is Currently Unavailable" class="availability-icon" /> </td>
+				<td> <a href="" class="notification"> <img src="img/notification-bell.png" alt="Notification Bell" class="notification-bell" width=30 height=30/> </a> </td>
+				<td> <a href="" class="enroll-button">Enroll</a> </td>
+			</tr>
+			<tr>
+				<td>CSCI 370: Software Engineering</div>
+				<td>Andy Abreu</div>
+				<td>Friday</div>
+				<td>6:30 PM - 9:20 PM</div>
+				<td> <img src="img/Red_Circle.png" height=40 width=40 alt="This Class is Currently Unavailable" class="availability-icon" /> </td>
+				<td> <a href="" class="notification"> <img src="img/notification-bell.png" alt="Notification Bell" class="notification-bell" width=30 height=30/> </a> </td>
+				<td> <a href="" class="enroll-button">Enroll</a> </td>
+			</tr>
+			<tr>
+				<td>CSCI 370: Software Engineering</div>
+				<td>John Svadlenka</div>
+				<td>Monday, Wednesday</div>
+				<td>3:10 PM - 4:25 PM</div>
+				<td> <img class="availability-icon" src="img/Green_Circle.png" height=40 width=40 alt="This Class is Currently Available"/> </td>
+				<td> <a href="" class="notification"> <img src="img/notification-bell.png" alt="Notification Bell" class="notification-bell" width=30 height=30/> </a> </td>
+				<td> <a href="" class="enroll-button">Enroll</a> </td>
+			</tr>
+			<tr>
+				<td>CSCI 370: Software Engineering</div>
+				<td>John Svadlenka</div>
+				<td>Tuesday, Thursday</div>
+				<td>12:15 PM - 1:30 PM</div>
+				<td> <img class="availability-icon" src="img/Green_Circle.png" height=40 width=40 alt="This Class is Currently Available"/> </td>
+				<td> <a href="" class="notification"> <img src="img/notification-bell.png" alt="Notification Bell" class="notification-bell" width=30 height=30/> </a> </td>
+				<td> <a href="" class="enroll-button">Enroll</a> </td>
+			</tr>
+			<tr>
+				<td>CSCI 370: Software Engineering</div>
+				<td>Bon Sy</div>
+				<td>Tuesday, Thursday</div>
+				<td>10:45 AM - 12:00 PM</div>
+				<td> <img class="availability-icon" src="img/Green_Circle.png" height=40 width=40 alt="This Class is Currently Available"/> </td>
+				<td> <a href="" class="notification"> <img src="img/notification-bell.png" alt="Notification Bell" class="notification-bell" width=30 height=30/> </a> </td>
+				<td> <a href="" class="enroll-button">Enroll</a> </td>
+			</tr>
+			<tr>
+				<td>CSCI 370: Software Engineering</div>
+				<td>Robert Goldberg</div>
+				<td>Monday, Wednesday</div>
+				<td>9:15 AM - 10:30 AM</div>
+				<td> <img class="availability-icon" src="img/Green_Circle.png" height=40 width=40 alt="This Class is Currently Available"/> </td>
+				<td> <a href="" class="notification"> <img src="img/notification-bell.png" alt="Notification Bell" class="notification-bell" width=30 height=30/> </a> </td>
+				<td> <a href="" class="enroll-button">Enroll</a> </td>
+			</tr>
+		</table>
+		<button type="button">Next</button> <!--Button to Display Next Table of Results-->
+	</body>
+</html>

@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head> 
+	  	<meta charset = UTF-8 />
+		<title>Student Center</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	</head>
+	<body>
+		<!--Page Header-->
+		<div class="topnav">
+			<!--QC Logo-->
+			<a href="Student Center.html" class="logo"> 
+				<img src="img/qc_logo.jpg" width=50 alt="QC Logo"/>
+			</a>
+			<!--Dropdown Navigation Menu Stored in User Icon-->
+			<nav role="navigation" class="nav-menu">
+				<div class="dropdown">
+					<div class="dropdown-toggle">
+						<!--User Photo: https://stock.adobe.com/290580606?tduid=971268d0957d9995b1e6a74288ca7071&as_channel=affiliate&as_campclass=redirect&as_source=arvato&asset_id=290580351-->
+						<img src="img/User.png" width=50 alt="Profile Photo" /> 
+					</div>
+					<!--Links That Direct to Home (Student Center), Settings, and Sign Out (Homepage)-->
+					<nav class="dropdown-list">
+						<a href="studentCenter.html" class="dropdown-link">Home</a>
+						<a href="settings.html" class="dropdown-link">Settings</a>
+						<a href="index.html" class="dropdown-link">Sign Out</a>
+					</nav>
+				</div>
+			</nav>
+		</div>
+		<!--End of Page Header-->
+		<h1> Welcome to Student Center</h1> <!--Page Heading-->
+		<!--Section That Contains Link Options and Course Schedule (Depending on Selected Semester/Term)-->
+		<section class="main-section">
+			<div class="row">
+				<!--Left Column That Displays the Option Links-->
+				<div class="left-side">
+					<!--Links That direct to Course Search, Blackboard, and Degreeworks-->
+					<h2 class="options">Options</h2>
+					<article>
+						<a href="courseSearch.html" class="link"> Course Search <br/></a>
+					</article>
+					<article>
+						<a href="https://bbhosted.cuny.edu/" class="link"> Blackboard <br/></a>
+					</article>
+					<article>
+						<a href="https://degreeworks.cuny.edu/" class="link"> Degreeworks <br/></a>
+					</article>
+				</div>
+				<!--Right Column That Displays the Course Schedule (Heading, Dropdown List, Table)-->
+				<div class="right-side">
+					<!--Row That Displays the Course Schedule Heading and Dropdown List That Includes Semester Options-->
+					<div class="row">
+						<div class="left-side"> 
+							<h2 class="heading">Course Schedule</h2> 
+						</div>
+						<div class="right-side">
+							<div class="select-form">
+								<label for="select-semester">Select Semester</label>
+								<select id="select-semester" name="select-semester">
+									<option value="">Select one...</option>
+									<option value="notification">Notified Courses</options>
+									<option value="spring2021">Spring 2021</option>
+									<option value="fall2020">Fall 2020</option>
+									<option value="spring2020">Spring 2020</option>
+								</select>
+							</div>
+						</div>
+					</div>
+					<!--This is the Schedule That is Shown on Mobile Devices-->
+					<table class="mobile-schedule" hidden>
+						<tr>
+							<th>Course Name</th>
+							<th>Course Days</th>
+							<th>Course Time</th>
+						</tr>
+						<tr>
+							<td>CSCI 316</td>
+							<td>Monday, Wednesday</td>
+							<td>1:40 PM - 2:55 PM</td>
+						</tr>
+						<tr>
+							<td>CSCI 331</td>
+							<td>Monday, Wednesday</td>
+							<td>8:00 PM - 9:15 PM</td>
+						</tr>
+						<tr>
+							<td>CSCI 323</td>
+							<td>Tuesday, Thursday</td>
+							<td>6:30 PM - 7:45 PM</td>
+						</tr>
+						<tr>
+							<td>CSCI 355</td>
+							<td>Tuesday</td>
+							<td>8:00 PM - 10:50 PM</td>
+						</tr>
+					</table>
+					<!--If Notified Classes is Selected From the Dropdown List, This Schedule is Shown on Mobile Devices-->
+					<table class="mobile-notified-schedule" hidden>
+						<tr>
+							<th></th> <!--This Column Allows User to Remove a Course From This Schedule Table by Clicking on the X Icon-->
+							<th>Course Name</th>
+							<th>Availability</th>
+							th></th> <!--This Column is for the Enroll Button-->
+						</tr>
+						<tr>
+							<td> <a href="" class="remove-course"> <img class="remove-icon" src="img/x-icon.png" height=20 width=20 alt="Remove Class"/> </a> </td>
+							<td>CSCI 316</td>
+							<td> <img src="img/Red_Circle.png" height=40 width=40 alt="This Class is Currently Unavailable" class="availability-icon"/> </td>
+							<td> <a href="" class="enroll-button">Enroll</a> </td>
+						</tr>
+						<tr>
+							<td> <a href="" class="remove-course"> <img class="remove-icon" src="img/x-icon.png" height=20 width=20 alt="Remove Class"/> </a> </td>
+							<td>CSCI 331</td>
+							<td> <img class="availability-icon" src="img/Green_Circle.png" height=40 width=40 alt="This Class is Currently Available"/> </td>
+							<td> <a href="" class="enroll-button">Enroll</a> </td>
+						</tr>
+						<tr>
+							<td> <a href="" class="remove-course"> <img class="remove-icon" src="img/x-icon.png" height=20 width=20 alt="Remove Class"/> </a> </td>
+							<td>CSCI 323</td>
+							<td> <img src="img/Red_Circle.png" height=40 width=40 alt="This Class is Currently Unavailable" class="availability-icon"/> </td>
+							<td> <a href="" class="enroll-button">Enroll</a> </td>
+						</tr>
+						<tr>
+							<td> <a href="" class="remove-course"> <img class="remove-icon" src="img/x-icon.png" height=20 width=20 alt="Remove Class"/> </a> </td>
+							<td>CSCI 355</td>
+							<td> <img class="availability-icon" src="img/Green_Circle.png" height=40 width=40 alt="This Class is Currently Available"/> </td>
+							<td> <a href="" class="enroll-button">Enroll</a> </td>
+						</tr>
+					</table>
+					
+					<!--This is the Schedule That is Shown on Devices Other Than Mobile-->
+					<table class="schedule">
+						<tr>
+							<th>Course Name</th>
+							<th>Instructor</th>
+							<th>Course Days</th>
+							<th>Course Time</th>
+						</tr>
+						<tr>
+							<td>CSCI 316</td>
+							<td>Tat Yung Kong</td>
+							<td>Monday, Wednesday</td>
+							<td>1:40 PM - 2:55 PM</td>
+						</tr>
+						<tr>
+							<td>CSCI 331</td>
+							<td>Daniel Leavitt</td>
+							<td>Monday, Wednesday</td>
+							<td>8:00 PM - 9:15 PM</td>
+						</tr>
+						<tr>
+							<td>CSCI 323</td>
+							<td>Paul Cesaretti</td>
+							<td>Tuesday, Thursday</td>
+							<td>6:30 PM - 7:45 PM</td>
+						</tr>
+						<tr>
+							<td>CSCI 355</td>
+							<td>Mark Abramov</td>
+							<td>Tuesday</td>
+							<td>8:00 PM - 10:50 PM</td>
+						</tr>
+					</table>
+					
+					<!--If Notified Classes is Selected From the Dropdown List, This is the Schedule That is Shown on Devices Other Than Mobile-->
+					<table class="notified-schedule" hidden>
+						<tr>
+							<th>Course Name</th>
+							<th>Instructor</th>
+							<th>Course Days</th>
+							<th>Course Time</th>
+							<th>Semester</th>
+							<th>Availability</th>
+							<th>Unnotify Me</th> <!--If Notification Bell is clicked on, the Selected Course is removed From This Schedule Table-->
+							<th></th> <!--If the Enroll Button is clicked on, the Selected Course goes to the Schedule Table That Matches the Selected Course's Semester-->
+						</tr>
+						<tr>
+							<td>CSCI 316</td>
+							<td>Tat Yung Kong</td>
+							<td>Monday, Wednesday</td>
+							<td>1:40 PM - 2:55 PM</td>
+							<td>Spring 2021</td>
+							<td> <img src="img/Red_Circle.png" height=40 width=40 alt="This Class is Currently Unavailable" class="availability-icon"/> </td>
+							<td> <a href="" class="notification"> <img src="img/notification-bell.png" alt="Notification Bell" class="notification-bell" width=30 height=30/> </a> </td>
+							<td> <a href="" class="enroll-button">Enroll</a> </td>
+						</tr>
+						<tr>
+							<td>CSCI 331</td>
+							<td>Daniel Leavitt</td>
+							<td>Monday, Wednesday</td>
+							<td>8:00 PM - 9:15 PM</td>
+							<td>Spring 2021</td>
+							<td> <img class="availability-icon" src="img/Green_Circle.png" height=40 width=40 alt="This Class is Currently Available"/> </td>
+							<td> <a href="" class="notification"> <img src="img/notification-bell.png" alt="Notification Bell" class="notification-bell" width=30 height=30/> </a> </td>
+							<td> <a href="" class="enroll-button">Enroll</a> </td>
+						</tr>
+						<tr>
+							<td>CSCI 323</td>
+							<td>Paul Cesaretti</td>
+							<td>Tuesday, Thursday</td>
+							<td>6:30 PM - 7:45 PM</td>
+							<td>Fall 2021</td>
+							<td> <img src="img/Red_Circle.png" height=40 width=40 alt="This Class is Currently Unavailable" class="availability-icon"/> </td>
+							<td> <a href="" class="notification"> <img src="img/notification-bell.png" alt="Notification Bell" class="notification-bell" width=30 height=30/> </a> </td>
+							<td> <a href="" class="enroll-button">Enroll</a> </td>
+						</tr>
+						<tr>
+							<td>CSCI 355</td>
+							<td>Mark Abramov</td>
+							<td>Tuesday</td>
+							<td>8:00 PM - 10:50 PM</td>
+							<td>Fall 2021</td>
+							<td> <img class="availability-icon" src="img/Green_Circle.png" height=40 width=40 alt="This Class is Currently Available"/> </td>
+							<td> <a href="" class="notification"> <img src="img/notification-bell.png" alt="Notification Bell" class="notification-bell" width=30 height=30/> </a> </td>
+							<td> <a href="" class="enroll-button">Enroll</a> </td>
+						</tr>
+					</table>
+				</div> <!--End of Right Column-->
+			</div> <!--End of Row-->
+		</section>
+		<!--Section That Displays Payments That are Due (Left Column) and Holds (Right Column)-->
+		<section class="payment-hold-section">
+			<div class="row">
+				<!--Column That Displays Amount due on Payments-->
+				<div class="left-side">
+					<h2>Payment</h2>
+					<p>Amount Due: $3,765.21</p>
+					<a href="" class="button">Pay Now</a>
+				</div>
+				<!--Column That Displays any Account Holds-->
+				<div class="right-side">
+					<h2>Holds</h2>
+					<p>You Currently Have No Holds</p>
+				</div>
+			</div>
+		</section>
+	</body>
+</html>

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head> 
+	  	<meta charset = UTF-8 />
+		<title>Student Center</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	</head>
+	<body>
+		<!--Page Header-->
+		<div class="topnav">
+			<!--QC Logo-->
+			<a href="Student Center.html" class="logo"> 
+				<img src="img/qc_logo.jpg" width=50 alt="QC Logo"/>
+			</a>
+			<!--Dropdown Navigation Menu Stored in User Icon-->
+			<nav role="navigation" class="nav-menu">
+				<div class="dropdown">
+					<div class="dropdown-toggle">
+						<!--User Photo: https://stock.adobe.com/290580606?tduid=971268d0957d9995b1e6a74288ca7071&as_channel=affiliate&as_campclass=redirect&as_source=arvato&asset_id=290580351-->
+						<img src="img/User.png" width=50 alt="Profile Photo" /> 
+					</div>
+					<!--Links That Direct to Home (Student Center), Settings, and Sign Out (Homepage)-->
+					<nav class="dropdown-list">
+						<a href="studentCenter.html" class="dropdown-link">Home</a>
+						<a href="settings.html" class="dropdown-link">Settings</a>
+						<a href="index.html" class="dropdown-link">Sign Out</a>
+					</nav>
+				</div>
+			</nav>
+		</div>
+		<!--End of Page Header-->
+		<h1>Welcome to Faculty Center</h1> <!--Page Heading-->
+		<!--Section That Contains Link Options and Course Schedule (Depending on Selected Semester/Term)-->
+		<div class="main-section">
+			<div class="row">
+				<!--Left Column That Displays the Option Links-->
+				<div class="left-side">
+					<!--Links That Direct to Create a Class and Blackboard, and Degreeworks-->
+					<h2 class="options">Options</h2>
+					<article>
+						<a href="createaclass.html" class="link"> Create a Class <br/></a>
+					</article>
+					<article>
+						<a href="https://bbhosted.cuny.edu/" class="link">Blackboard <br/></a>
+					</article>
+				</div>
+				<!--Right Column That Displays the Course Schedule (Heading, Dropdown List, Table)-->
+				<div class="right-side">
+					<!--Row That Displays the Course Schedule Heading and Dropdown List That Includes Semester Options-->
+					<div class="row">
+						<div class="left-side">
+							<h2 class="heading">Course Schedule</h2>
+						</div>
+						<div class="right-side">
+							<div class="select-form">
+								<label for="select-semester">Select Semester</label>
+								<select id="select-semester" name="select-semester">
+									<option value="">Select one...</option>
+									<option value="spring2021">Spring 2021</option>
+									<option value="fall2020">Fall 2020</option>
+									<option value="spring2020">Spring 2020</option>
+								</select>
+							</div>
+						</div>
+					</div> <!--End of Row-->
+					<!--Since This Table has Three Columns, This Schedule Will be Shown on all Devices-->
+					<table class="schedule">
+						<tr>
+							<th>Class Name</th>
+							<th>Class Days</th>
+							<th>Class Time</th>
+						</tr>
+						<tr>
+							<td>CSCI 331</td>
+							<td>Tuesday, Thursday</td>
+							<td>1:40 PM - 2:55 PM</td>
+						</tr>
+						<tr>
+							<td>CSCI 313</td>
+							<td>Monday, Wednesday</td>
+							<td>1:40 PM - 2:55 PM</td>
+						</tr>
+						<tr>
+							<td>CSCI 313</td>
+							<td>Friday</td>
+							<td>6:30 PM - 9:30 PM</td>
+						</tr>
+					</table>
+				</div> <!--End of Right Column-->
+			</div> <!--End of Row-->
+		</div> <!--End of Main Section-->
+	</body>
+</html>
