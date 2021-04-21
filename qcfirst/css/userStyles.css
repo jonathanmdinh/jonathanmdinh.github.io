@@ -1,0 +1,45 @@
+.topnav {
+    background-color: red;
+    overflow: hidden;
+}
+.logo{
+    float: left;
+    border-radius: 50%;
+    background-color: transparent;
+    padding-left: 25px;
+    padding-top: 5px;
+}
+
+.dropdown-toggle{
+    float: right;
+    background-color: transparent;
+    padding-right: 25px;
+    padding-top: 5px;
+}
+
+.dropdown-list{
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding-right: 10px;
+    z-index: 1;
+}
+
+.dropdown-toggle:hover .dropdown-list{
+    display:block
+}
+
+body {
+    background-image: url("Queens-College.jpg");
+    background-size: cover;
+    margin: 0;
+}
+
+h1, h2{
+    font-weight: bold;
+}
+
+h1, h2, table, p, label{
+    text-align: center;
+}

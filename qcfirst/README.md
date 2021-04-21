@@ -47,6 +47,8 @@ The login page allows users to access a form that logs them into to their accoun
 
 ![Login Desktop visual design](https://github.com/Rockergamer321/qcfirst/blob/main/Visual%20Designs/Login%20Desktop.png)
 
+- The login and sign up buttons remained in the same place as the homepage, rather than on top of the border of the form container. This decision was made to keep the positioning of the buttons throughout the pages consistent, rather than have them change from one page to the next.
+
 ### Login Tablet Design
 
 ![Login Tablet visual design](https://github.com/Rockergamer321/qcfirst/blob/main/Visual%20Designs/Login%20Tablet.png)
@@ -54,6 +56,8 @@ The login page allows users to access a form that logs them into to their accoun
 ### Login Mobile Design
 
 ![Login Mobile visual design](https://github.com/Rockergamer321/qcfirst/blob/main/Visual%20Designs/Login%20Mobile.png)
+
+- The final design of the mobile login page includes the Queens College logo at the top left. The initial visual design took into account, the lack of space on the screen, which  led to the decision of removing the logo. However, after completing the code for this design, it was concluded that there was enough space for the logo to remain, ultimately improving the design.
 
 ## Sign Up
 
@@ -63,6 +67,8 @@ The sign up page allows users to access a form that creates a new account. The l
 
 ![Sign Up Desktop visual design](https://github.com/Rockergamer321/qcfirst/blob/main/Visual%20Designs/Sign%20Up%20Desktop.png)
 
+- The login and sign up buttons remained in the same place as the homepage, rather than on top of the border of the form container. This decision was made to keep the positioning of the buttons throughout the pages consistent, rather than have them change from one page to the next.
+
 ### Sign Up Tablet Design
 
 ![Sign Up Tablet visual design](https://github.com/Rockergamer321/qcfirst/blob/main/Visual%20Designs/Sign%20Up%20Tablet.png)
@@ -70,6 +76,8 @@ The sign up page allows users to access a form that creates a new account. The l
 ### Sign Up Mobile Design
 
 ![Sign Up Mobile visual design](https://github.com/Rockergamer321/qcfirst/blob/main/Visual%20Designs/Sign%20Up%20Mobile.png)
+
+- Similarly to the mobile design for the login page, the Queens College logo was kept in the sign up mobile design, straying from the initial visual designs. 
 
 ## Create A Class
 

@@ -1,0 +1,127 @@
+
+
+.main-section {
+    background-color: orange;
+    margin: 0 auto;
+    max-width: 700px;
+}
+
+.main-faculty-section {
+    background-color: orange;
+    margin: 0 auto;
+    max-width: 500px;
+}
+
+.main-section .left-side{
+    float: left;
+    position: relative;
+    padding-left: 10px;
+    padding-right: 10px;
+    width: 25%;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+.main-faculty-section .left-side{
+    float: left;
+    position: relative;
+    padding-left: 10px;
+    padding-right: 10px;
+    width: 25%;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+.main-section .right-side{
+    float: left;
+    position: relative;
+    width: 75%;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+.main-faculty-section .right-side{
+    float: left;
+    position: relative;
+    width: 75%;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+.left{
+    float: left;
+    position: relative;
+    width: 60%;
+    box-sizing: border-box;
+}
+
+.select-form{
+    float: left;
+    position: relative;
+    width: 40%;
+    padding-top: 15px;
+    box-sizing: border-box;
+}
+
+.main-faculty-section .select-form{
+    float: left;
+    position: relative;
+    width: 40%;
+    padding-top: 15px;
+    box-sizing: border-box;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: left;
+  }
+
+.payment-hold-section{
+    background-color: red;
+    overflow: hidden;
+    margin-top: 5px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 550px;
+}
+
+.payment-hold-section .left-side{
+    float: left;
+    position: relative;
+    padding-left: 10px;
+    padding-right: 10px;
+    width: 50%;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+.payment-hold-section .right-side{
+    float: left;
+    position: relative;
+    width: 50%;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+.table{
+    clear: left;
+    position: relative;
+    padding-left: 20px;
+}
+
+.container{
+    width: 100%;
+    text-align: center;
+}
+
+.button{
+    display: inline-block;
+    padding: 10px 15px;
+    background-color: #3898EC;
+    color: white;
+    line-height: inherit;
+    text-decoration: none;
+    cursor: pointer;
+    margin-left: 80px;
+}

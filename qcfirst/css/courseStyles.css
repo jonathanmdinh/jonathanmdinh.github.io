@@ -1,0 +1,95 @@
+.Search-Section{
+    background-color: black;
+    margin: 0 auto;
+    max-width: 700px;
+    margin-bottom: 5px;
+}
+
+.Search-Section label{
+    display: block;
+    margin-bottom: -10px;
+    color: white;
+    text-align: center;
+    font-weight: bold;
+}
+
+.form{
+    position: relative;
+    padding-left: 10px;
+    padding-right: 10px;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+input[type="text"]{
+    display: block;
+    width: 98%;
+    border: 3px solid #999999;
+}
+
+.Result-Section{
+    background-color: white;
+    margin: 0 auto;
+    max-width: 450px;
+    margin-bottom: 5px;
+}
+
+.search-left{
+    float: left;
+    position: relative;
+    padding-left: 10px;
+    padding-right: 10px;
+    width: 50%;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+.search-right{
+    float: left;
+    position: relative;
+    padding-left: 10px;
+    padding-right: 10px;
+    width: 50%;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+.search-output:after {
+    content: "";
+    display: table;
+    clear: left;
+  }
+
+  .Class-Selection{
+      background-color: orange;
+      margin-right: 275px;
+      margin-left: 350px;
+  }
+
+  th, td{
+      padding-left: 10px;
+  }
+
+  .button, .enroll-button{
+    display: inline-block;
+    float: right;
+    padding: 0px 5px;
+    margin-right: 5px;
+    background-color: #3898EC;
+    color: white;
+    line-height: inherit;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+  button{
+    margin-top: 5px;
+    display: inline-block;
+    float: right;
+    padding: 5px 15px;
+    margin-right: 5px;
+    background-color: black;
+    color: white;
+    line-height: inherit;
+    text-decoration: none;
+    cursor: pointer;
+  }

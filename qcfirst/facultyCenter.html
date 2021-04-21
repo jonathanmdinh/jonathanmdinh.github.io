@@ -4,93 +4,82 @@
 	  	<meta charset = UTF-8 />
 		<title>Faculty Center</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="css/userStyles.css">
+		<link rel="stylesheet" href="css/centerStyles.css">
 	</head>
 	<body>
 		<!--Page Header-->
 		<div class="topnav">
 			<!--QC Logo-->
 			<a href="https://jonathanmdinh.github.io/qcfirst/studentCenter.html" class="logo"> 
-				<img src="img/qc_logo.jpg" width=50 alt="QC Logo"/>
+				<img src="img/qc_logo.jpg" width=50 alt="QC Logo"/> 
 			</a>
 			<!--Dropdown Navigation Menu Stored in User Icon-->
-			<nav class="nav-menu">
-				<div class="dropdown">
-					<div class="dropdown-toggle">
-						<!--User Photo: https://stock.adobe.com/290580606?tduid=971268d0957d9995b1e6a74288ca7071&as_channel=affiliate&as_campclass=redirect&as_source=arvato&asset_id=290580351-->
-						<img src="img/User.png" width=50 alt="Profile Photo" /> 
-					</div>
+			<nav role="navigation" class="nav-menu">
+				<div class="dropdown-toggle"> 
+					<!--User Photo: https://stock.adobe.com/290580606?tduid=971268d0957d9995b1e6a74288ca7071&as_channel=affiliate&as_campclass=redirect&as_source=arvato&asset_id=290580351-->
+					<img src="img/User.png" width=50 alt="Profile Photo" /> 
 					<!--Links That Direct to Home (Student Center), Settings, and Sign Out (Homepage)-->
 					<nav class="dropdown-list">
-						<a href="https://jonathanmdinh.github.io/qcfirst/studentCenter.html" class="dropdown-link">Home</a>
-						<a href="https://jonathanmdinh.github.io/qcfirst/settings.html" class="dropdown-link">Settings</a>
+						<a href="https://jonathanmdinh.github.io/qcfirst/facultyCenter.html" class="dropdown-link">Home</a> <br>
+						<a href="https://jonathanmdinh.github.io/qcfirst/settings.html" class="dropdown-link">Settings</a> <br>
 						<a href="https://jonathanmdinh.github.io/qcfirst/index.html" class="dropdown-link">Sign Out</a>
 					</nav>
 				</div>
 			</nav>
 		</div> <!--End of Page Header-->
 		<h1>Welcome to Faculty Center</h1> <!--Page Heading-->
-		<!--Section That Contains Link Options and Course Schedule (Depending on Selected Semester/Term)-->
-		<div class="main-section">
+		<section class="main-faculty-section"> <!--Section That Contains Link Options and Course Schedule (Depending on Selected Semester/Term)-->
 			<div class="row">
 				<!--Left Column That Displays the Option Links-->
 				<div class="left-side">
-					<!--Links That Direct to Create a Class and Blackboard, and Degreeworks-->
-					<h2 class="options">Options</h2>
-					<article>
-						<h3>
-							<a href="https://jonathanmdinh.github.io/qcfirst/createaclass.html" class="link"> Create a Class <br/></a>
-						</h3>
-					</article>
-					<article>
-						<h3>
-							<a href="https://bbhosted.cuny.edu/" class="link">Blackboard <br/></a>
-						</h3>
-					</article>
+					<h2>Options</h2>
+					<!--Links That Direct to Create a Class and Blackboard-->
+					<div class="container">
+						<a href="createaclass.html" class="link"> Create a Class <br/></a>
+						<a href="https://bbhosted.cuny.edu/"> Blackboard <br/></a>
+					</div>
 				</div>
 				<!--Right Column That Displays the Course Schedule (Heading, Dropdown List, Table)-->
 				<div class="right-side">
 					<!--Row That Displays the Course Schedule Heading and Dropdown List That Includes Semester Options-->
-					<div class="row">
-						<div class="left-side">
-							<h2 class="heading">Course Schedule</h2>
-						</div>
-						<div class="right-side">
-							<div class="select-form">
-								<label for="select-semester">Select Semester</label>
-								<select id="select-semester" name="select-semester">
-									<option value="">Select one...</option>
-									<option value="spring2021">Spring 2021</option>
-									<option value="fall2020">Fall 2020</option>
-									<option value="spring2020">Spring 2020</option>
-								</select>
-							</div>
-						</div>
-					</div> <!--End of Row-->
+					<div class="left"><h2 class="heading">Courses</h2> </div>
+					<div class="select-form">
+						<label for="select-semester">Select Semester</label>
+						<select id="select-semester" name="select-semester">
+							<option value="">Select one...</option>
+							<option value="spring2021">Spring 2021</option>
+							<option value="fall2020">Fall 2020</option>
+							<option value="spring2020">Spring 2020</option>
+						</select>
+					</div>
 					<!--Since This Table has Three Columns, This Schedule Will be Shown on all Devices-->
-					<table class="schedule">
-						<tr>
-							<th>Class Name</th>
-							<th>Class Days</th>
-							<th>Class Time</th>
-						</tr>
-						<tr>
-							<td>CSCI 331</td>
-							<td>Tuesday, Thursday</td>
-							<td>1:40 PM - 2:55 PM</td>
-						</tr>
-						<tr>
-							<td>CSCI 313</td>
-							<td>Monday, Wednesday</td>
-							<td>1:40 PM - 2:55 PM</td>
-						</tr>
-						<tr>
-							<td>CSCI 313</td>
-							<td>Friday</td>
-							<td>6:30 PM - 9:30 PM</td>
-						</tr>
-					</table>
+					<div class="table">
+						<table class="schedule">
+							<tr>
+								<th>Class Name</th>
+								<th>Class Days</th>
+								<th>Class Time</th>
+							</tr>
+							<tr>
+								<td>CSCI 331</td>
+								<td>Tuesday, Thursday</td>
+								<td>1:40 PM - 2:55 PM</td>
+							</tr>
+							<tr>
+								<td>CSCI 313</td>
+								<td>Monday, Wednesday</td>
+								<td>1:40 PM - 2:55 PM</td>
+							</tr>
+							<tr>
+								<td>CSCI 313</td>
+								<td>Friday</td>
+								<td>6:30 PM - 9:30 PM</td>
+							</tr>
+						</table>
+					</div> <!--End of Table-->
 				</div> <!--End of Right Column-->
 			</div> <!--End of Row-->
-		</div> <!--End of Main Section-->
+		</section> <!--End of Main Section-->
 	</body>
 </html>

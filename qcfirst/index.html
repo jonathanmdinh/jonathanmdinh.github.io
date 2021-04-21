@@ -10,29 +10,35 @@
     </head>
 
     <body>
-        <header>
+        <header class="header">
             <div class="header-left">
                 <img src="img/qc_logo.jpg" alt="Queens College logo"> <!--QC Logo will appear on every webpage-->
             </div>
             <div class="header-right">
-                <a href="https://jonathanmdinh.github.io/qcfirst/login.html">Login</a> 
-                <a href="https://jonathanmdinh.github.io/qcfirst/sign-up.html">Sign Up</a> 
+                <a class="menu-login" href="https://jonathanmdinh.github.io/qcfirst/login.html">Login</a> 
+                <a class="menu-sign-up" href="https://jonathanmdinh.github.io/qcfirst/sign-up.html">Sign Up</a> 
+                <a href="javascript:;" class="mobile-menu-button">
+                    <i class="fa fa-bars"></i>
+                </a>
             </div>
         </header>
 
         <div class="topnav" id="myTopnav">
-            <a href="https://www.qc.cuny.edu/Academics/Degrees/Pages/default.aspx">Departments</a>
-            <a href="https://library.qc.cuny.edu/">Libraries</a>
-            <a href="https://queensknights.com/index.aspx">Athletics</a>
-            <a href="https://www.qc.cuny.edu/Academics/Degrees/DAH/Pages/default.aspx">Arts</a>
-            <a href="javascript:void(0);" class="icon" onclick="opentopnav()"> <!--used to open and close the topnav on small screens-->
-                <i class="fa fa-bars"></i>
-            </a>
+            <ul class="topnav_list">
+                <li><a href="https://www.qc.cuny.edu/Academics/Degrees/Pages/default.aspx">Departments</a></li>
+                <li><a href="https://library.qc.cuny.edu/">Libraries</a></li>
+                <li><a href="https://queensknights.com/index.aspx">Athletics</a></li>
+                <li><a href="https://www.qc.cuny.edu/Academics/Degrees/DAH/Pages/default.aspx">Arts</a></li>
+                <li><a href="javascript:void(0);" class="icon" onclick="opentopnav()"> <!--used to open and close the topnav on small screens-->
+                    <i class="fa fa-bars"></i>
+                </a>
+            </ul>
+            
         </div>
 
-        <div class="slide-container"> 
+        <div class="slide-container" > 
         <!--Slide Images Banner-->
-            <div class="image-container">
+            <div class="image-container fade" style ="display: block;">
                 <img src="img/covid19info.png" class="slider-image" alt="covid-19 information"> <!--First Slider Image-->
                 <img src="img/Isaac_wow_62.jpg" class="slider-image" alt="Isaac-wow 62"> <!--Second Slider Image-->
                 <img src="img/summer_session.jpg" class="slider-image" alt="summer session information"> <!--Third Slider Image-->
@@ -51,23 +57,29 @@
         </div>
         
         <section class="homepage-paragraphs">
-            <div class="homepage-details">
-            <!--Enrollment Information Section-->
-                <div class="enroll-info">
-                    <h1>Enroll Now!</h1>
-                    <p>Queens College offers a wide variety of courses, suitable for anyone, trying to achieve anything. Enroll in a course now and begin your journey to a brighter future!</p>
-                    <a href="https://jonathanmdinh.github.io/qcfirst/courseSearch.html">Begin Enrollment</a> 
+            <div class="homepage-details ">
+                <!--Enrollment Information Section-->
+                <div class="enroll-info ">
+                    <div class="enroll-info-wrap">
+                        <h1>Enroll Now!</h1>
+                        <p>Queens College offers a wide variety of courses, suitable for anyone, trying to achieve anything. Enroll in a course now and begin your journey to a brighter future!</p>
+                        <div class="align-right">
+                            <a href="https://jonathanmdinh.github.io/qcfirst/courseSearch.html">Begin Enrollment</a>
+                        </div> 
+                    </div>
                 </div>
-            <!--//Enrollment Information Section-->    
-            </div>
-            <div class="homepage-details">
-            <!--Advisement Information Section-->
+                <!--//Enrollment Information Section-->    
+                <!--Advisement Information Section-->
                 <div class="advisement-info">
-                    <h1>Contact Us</h1>
-                    <p>Need help with your enrollment process? Visit our advisement information page to find out more about how you can make your course enrollment journey even better.</p>
-                    <a href="https://www.qc.cuny.edu/Academics/SupportPrograms/advising/Pages/default.aspx">Contact Us</a> 
+                    <div class="advisement-info-wrap">
+                        <h1>Contact Us</h1>
+                        <p>Need help with your enrollment process? Visit our advisement information page to find out more about how you can make your course enrollment journey even better.</p>
+                        <div class="align-right">
+                            <a href="https://www.qc.cuny.edu/Academics/SupportPrograms/advising/Pages/default.aspx">Contact Us</a> 
+                        </div>
+                    </div>
                 </div>
-            <!--//Advisement Information Section-->
+                <!--//Advisement Information Section-->
             </div>
         </section>
     </body>

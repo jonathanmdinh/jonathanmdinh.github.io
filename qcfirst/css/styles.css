@@ -1,0 +1,278 @@
+/*source: https://css-tricks.com/box-sizing/ */
+*,
+*:after,
+*:before {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+body {
+    color: #010713;
+    margin: 0;
+    padding: 0;
+    font-family: 'Shippori Mincho', serif;
+    font-size: 20px;
+    line-height: 1.5;
+    background: #fff;
+}
+
+.header {
+    display: flex;
+    flex-flow: row nowrap;
+    /* padding: 100px 0; */
+    align-items: center;
+}
+
+.header-left {
+    flex: 1 1;
+}
+
+.header-left img {
+    width: 100%;
+    max-width: 500px;
+}
+
+/*positions login/signup buttons to right side*/
+.header-right {
+    display: flex;
+    width: 100%;
+    justify-content: flex-end;
+    flex: 0 0 100px;
+}
+
+/*Styles the Login / Sign Up links*/
+.header-right a {
+    position: relative;
+    padding: 20px 50px;
+    text-decoration: none;
+    color: black;
+    text-align: center;
+    background-color: #ccc;
+}
+
+/*Styles Login / Sign Up buttons on hover*/
+.header-right a:hover {
+    background-color: rgb(223, 221, 221);
+    color: black;
+}
+
+/*Styles nagivation bar*/
+.topnav {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background-color: lightgrey;
+}
+
+.topnav_list {
+    display: flex;
+    flex-flow: row nowrap;
+    margin: 0;
+    padding: 0;
+    flex: 0 0 350px;
+}
+
+.topnav li {
+    display: inline-block;
+    color: black;
+    flex: 1 1 auto;
+}
+
+.topnav li:not(:last-of-type) { /*not the hamburger menu*/
+    display: none;
+}
+
+/*Styles navigation bar links*/
+.topnav a {
+    display: block;
+    padding: 20px 0;
+    text-decoration: none;
+    font-size:1.2em;
+    color: black;
+    
+}
+
+.topnav a:hover {
+    background-color: rgb(223, 221, 221);
+    color: black;
+}
+
+.slider-image {
+    width: 100%;
+    height: auto;
+}
+ /*removes login / sign up buttons */
+.menu-sign-up,
+.menu-login {
+    display: none;
+}
+
+/* Styles slider image*/
+.slide-container {
+    position: relative;
+    width: 100%;
+}
+
+.image-container {
+    display: none;
+    overflow: hidden;
+    flex-shrink: 0;
+}
+
+.slider-image:not(:first-of-type) {
+    display: none;
+}
+
+.prev, .next{
+	position: absolute;
+	top: 50%;
+	transform: translate(0, -50%);
+	font-size: 50px;
+	padding: 15px;
+	cursor: pointer;
+	color: #fff;
+	transition: 0.1s;
+	user-select: none;
+}
+
+.prev:hover, .next:hover{
+	color: #00a7ff; /* blue */
+}
+
+.next {
+    right: 0;
+} 
+
+.dotsbox {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    bottom: 40px;
+    cursor: pointer;
+}
+
+.dot {
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    border: 3px solid #ffff;
+    border-radius: 50%;
+    margin: 0 10px;
+    cursor: pointer;
+}
+
+.homepage-details {
+    display: flex;
+    flex-flow: column wrap;
+}
+
+.enroll-info,
+.advisement-info {
+    flex: 1 1 100%;
+}
+
+.enroll-info-wrap,
+.advisement-info-wrap {
+    padding: 25px 10px
+}
+
+.homepage-details a {
+    display: inline-block;
+    padding: 20px 30px;
+    text-decoration: none;
+    background-color: rgb(54, 162, 230);
+    font-weight: bold;
+    font-size: 26px;
+    color: white;
+}
+
+.enroll-info h1,.advisement-info h1 {
+    font-size: 38px;
+    font-weight: 600;
+}
+
+.enroll-info p, .advisement-info p {
+    font-size: 28px;
+}
+
+.align-right {
+    text-align: right;
+}
+
+/* Login / Sign Up Container / Create a Class*/
+.login-container, .signup-container, .createaclass{
+    border: solid;
+    padding: 50px;
+    margin: 20px;
+}
+
+.login-container h1, .signup-container h1, .createaclass h1 {
+    font-size: 38px;
+    margin: 0;
+}
+
+.login-container input, .signup-container input, .createaclass input {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+}
+
+.createaclass textarea {
+    width: 100%;
+
+}
+
+.submitbtn {
+    display: block;
+    text-align: right;
+}
+
+input[type=submit] {
+    display: inline-block;
+    width: 150px;
+    text-decoration: none;
+    background-color: rgb(54, 162, 230);
+    font-weight: bold;
+    font-size: 26px;
+    color: white;
+}
+@media all and (min-width: 786px) {
+    .header {
+        padding: 100px 0;
+    }
+    .topnav li:last-of-type {
+        display: none;
+    }
+    .menu-sign-up,
+    .menu-login {
+        display: block;
+    }
+    .homepage-details {
+        flex-flow: row wrap;
+    }
+
+    .enroll-info,
+    .advisement-info {
+        flex: 1 1 50%;
+    }
+    .mobile-menu-button {
+        display: none;
+    }
+    .header-right {
+        flex: 0 0 350px;
+    }
+    .enroll-info-wrap,
+    .advisement-info-wrap {
+        padding: 10px
+    }
+    .topnav li:not(:last-of-type) {
+        display: inline-block;
+    }
+
+    .topnav li:last-of-type {
+        display: none;
+    }
+}

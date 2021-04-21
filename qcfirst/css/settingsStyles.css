@@ -1,0 +1,88 @@
+.heading, .name-id-section, .email-section, .phone-section, .notifications-section{
+    background-color: black;
+    margin: 0 auto;
+    max-width: 700px;
+    margin-bottom: 5px;
+}
+
+.heading{
+    margin-top: 10px;
+}
+
+.name-id-section:after, .email-section:after, .phone-section:after, .notifications-section:after, .checkbox-field:after{
+    content: "";
+    display: table;
+    clear: left;
+}
+
+h1, h2, p, label{ 
+    color: white;
+}
+
+h1{
+margin-top: 0px;
+margin-bottom: 5px;
+}
+
+h1:first-of-type{
+    margin-top: 5px;
+}
+
+.heading img{
+    display: block;
+    margin: 0 auto;
+}
+
+.left-side{
+    float: left;
+    position: relative;
+    padding-left: 10px;
+    padding-right: 10px;
+    width: 50%;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+.right-side{
+    float: left;
+    position: relative;
+    padding-left: 10px;
+    padding-right: 10px;
+    width: 50%;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+.button{
+    display: inline-block;
+    padding: 10px 5px;
+    margin-right: 5px;
+    background-color: #3898EC;
+    color: white;
+    line-height: inherit;
+    text-decoration: none;
+    cursor: pointer;
+    margin-left: 110px;
+    margin-top: 40px;
+}
+
+input[type="checkbox"]{
+    display: block;
+    float: left;
+    position: relative;
+    width: 30px;
+    height: 50px;
+}
+
+label{
+    display: block;
+    float: left;
+    position: relative;
+    margin-top: 10px;
+    padding-left: 5px;
+    font-size: 30px;
+}
+
+.checkbox-field{
+margin-left: 100px;
+}

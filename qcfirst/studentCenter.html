@@ -4,31 +4,30 @@
 	  	<meta charset = UTF-8 />
 		<title>Student Center</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="css/userStyles.css">
+		<link rel="stylesheet" href="css/centerStyles.css">
 	</head>
 	<body>
 		<!--Page Header-->
 		<div class="topnav">
 			<!--QC Logo-->
 			<a href="https://jonathanmdinh.github.io/qcfirst/studentCenter.html" class="logo"> 
-				<img src="img/qc_logo.jpg" width=50 alt="QC Logo"/>
+				<img src="img/qc_logo.jpg" width=50 alt="QC Logo"/> 
 			</a>
 			<!--Dropdown Navigation Menu Stored in User Icon-->
-			<nav class="nav-menu">
-				<div class="dropdown">
-					<div class="dropdown-toggle">
-						<!--User Photo: https://stock.adobe.com/290580606?tduid=971268d0957d9995b1e6a74288ca7071&as_channel=affiliate&as_campclass=redirect&as_source=arvato&asset_id=290580351-->
-						<img src="img/User.png" width=50 alt="Profile Photo" /> 
-					</div>
+			<nav role="navigation" class="nav-menu">
+				<div class="dropdown-toggle"> 
+					<!--User Photo: https://stock.adobe.com/290580606?tduid=971268d0957d9995b1e6a74288ca7071&as_channel=affiliate&as_campclass=redirect&as_source=arvato&asset_id=290580351-->
+					<img src="img/User.png" width=50 alt="Profile Photo" /> 
 					<!--Links That Direct to Home (Student Center), Settings, and Sign Out (Homepage)-->
 					<nav class="dropdown-list">
-						<a href="https://jonathanmdinh.github.io/qcfirst/studentCenter.html" class="dropdown-link">Home</a>
-						<a href="https://jonathanmdinh.github.io/qcfirst/settings.html" class="dropdown-link">Settings</a>
+						<a href="https://jonathanmdinh.github.io/qcfirst/facultyCenter.html" class="dropdown-link">Home</a> <br>
+						<a href="https://jonathanmdinh.github.io/qcfirst/settings.html" class="dropdown-link">Settings</a> <br>
 						<a href="https://jonathanmdinh.github.io/qcfirst/index.html" class="dropdown-link">Sign Out</a>
 					</nav>
 				</div>
 			</nav>
-		</div>
-		<!--End of Page Header-->
+		</div> <!--End of Page Header-->
 		<h1> Welcome to Student Center</h1> <!--Page Heading-->
 		<h2>For Faculty Center: <a href="https://jonathanmdinh.github.io/qcfirst/facultyCenter.html">Click Here</a></h2>
 		<!--Section That Contains Link Options and Course Schedule (Depending on Selected Semester/Term)-->
@@ -36,50 +35,34 @@
 			<div class="row">
 				<!--Left Column That Displays the Option Links-->
 				<div class="left-side">
+					<h2>Options</h2>
 					<!--Links That direct to Course Search, Blackboard, and Degreeworks-->
-					<h2 class="options">Options</h2>
-					<article>
-						<h3>
-							<a href="https://jonathanmdinh.github.io/qcfirst/courseSearch.html" class="link"> Course Search <br/></a>
-						</h3>
-					</article>
-					<article>
-						<h3>
-							<a href="https://bbhosted.cuny.edu/" class="link"> Blackboard <br/></a>
-						</h3>
-					</article>
-					<article>
-						<h3>
-							<a href="https://degreeworks.cuny.edu/" class="link"> Degreeworks <br/></a>
-						</h3>
-					</article>
+					<div class="container">
+						<a href="courseSearch.html"> Course Search <br/></a>
+						<a href="https://bbhosted.cuny.edu/"> Blackboard <br/></a>
+						<a href="https://degreeworks.cuny.edu/"> Degreeworks <br/></a>
+					</div>
 				</div>
 				<!--Right Column That Displays the Course Schedule (Heading, Dropdown List, Table)-->
 				<div class="right-side">
-					<!--Row That Displays the Course Schedule Heading and Dropdown List That Includes Semester Options-->
-					<div class="row">
-						<div class="left-side"> 
-							<h2 class="heading">Course Schedule</h2> 
-						</div>
-						<div class="right-side">
-							<div class="select-form">
-								<label for="select-semester">Select Semester</label>
-								<select id="select-semester" name="select-semester">
-									<option value="">Select one...</option>
-									<option value="notification">Notified Courses</option>
-									<option value="spring2021">Spring 2021</option>
-									<option value="fall2020">Fall 2020</option>
-									<option value="spring2020">Spring 2020</option>
-								</select>
-							</div>
-						</div>
+					<!--Row That Displays the Course Schedule Heading and Dropdown List That Includes Semester Options--> 
+					<div class="left"><h2 class="heading">Courses</h2> </div>
+					<div class="select-form">
+						<label for="select-semester">Select Semester</label>
+						<select id="select-semester" name="select-semester">
+							<option value="">Select one...</option>
+							<option value="notifiedcourses">Notified Courses</option>
+							<option value="spring2021">Spring 2021</option>
+							<option value="fall2020">Fall 2020</option>
+							<option value="spring2020">Spring 2020</option>
+						</select>
 					</div>
 					<!--This is the Schedule That is Shown on Mobile Devices-->
 					<table class="mobile-schedule" hidden>
 						<tr>
-							<th>Course Name</th>
-							<th>Course Days</th>
-							<th>Course Time</th>
+							<th>Class Name</th>
+							<th>Class Days</th>
+							<th>Class Time</th>
 						</tr>
 						<tr>
 							<td>CSCI 316</td>
@@ -102,7 +85,7 @@
 							<td>8:00 PM - 10:50 PM</td>
 						</tr>
 					</table>
-					<!--If Notified Classes is Selected From the Dropdown List, This Schedule is Shown on Mobile Devices-->
+					<!--If Notified Courses is Selected From the Dropdown List, This Schedule is Shown on Mobile Devices-->
 					<table class="mobile-notified-schedule" hidden>
 						<tr>
 							<th></th> <!--This Column Allows User to Remove a Course From This Schedule Table by Clicking on the X Icon-->
@@ -135,42 +118,42 @@
 							<td> <a href="" class="enroll-button">Enroll</a> </td>
 						</tr>
 					</table>
-					
 					<!--This is the Schedule That is Shown on Devices Other Than Mobile-->
-					<table class="schedule">
-						<tr>
-							<th>Course Name</th>
-							<th>Instructor</th>
-							<th>Course Days</th>
-							<th>Course Time</th>
-						</tr>
-						<tr>
-							<td>CSCI 316</td>
-							<td>Tat Yung Kong</td>
-							<td>Monday, Wednesday</td>
-							<td>1:40 PM - 2:55 PM</td>
-						</tr>
-						<tr>
-							<td>CSCI 331</td>
-							<td>Daniel Leavitt</td>
-							<td>Monday, Wednesday</td>
-							<td>8:00 PM - 9:15 PM</td>
-						</tr>
-						<tr>
-							<td>CSCI 323</td>
-							<td>Paul Cesaretti</td>
-							<td>Tuesday, Thursday</td>
-							<td>6:30 PM - 7:45 PM</td>
-						</tr>
-						<tr>
-							<td>CSCI 355</td>
-							<td>Mark Abramov</td>
-							<td>Tuesday</td>
-							<td>8:00 PM - 10:50 PM</td>
-						</tr>
-					</table>
-					
-					<!--If Notified Classes is Selected From the Dropdown List, This is the Schedule That is Shown on Devices Other Than Mobile-->
+					<div class="table">
+						<table class="schedule">
+							<tr>
+								<th>Course Name</th>
+								<th>Instructor</th>
+								<th>Course Days</th>
+								<th>Course Time</th>
+							</tr>
+							<tr>
+								<td>CSCI 316</td>
+								<td>Tat Yung Kong</td>
+								<td>Monday, Wednesday</td>
+								<td>1:40 PM - 2:55 PM</td>
+							</tr>
+							<tr>
+								<td>CSCI 331</td>
+								<td>Daniel Leavitt</td>
+								<td>Monday, Wednesday</td>
+								<td>8:00 PM - 9:15 PM</td>
+							</tr>
+							<tr>
+								<td>CSCI 323</td>
+								<td>Paul Cesaretti</td>
+								<td>Tuesday, Thursday</td>
+								<td>6:30 PM - 7:45 PM</td>
+							</tr>
+							<tr>
+								<td>CSCI 355</td>
+								<td>Mark Abramov</td>
+								<td>Tuesday</td>
+								<td>8:00 PM - 10:50 PM</td>
+							</tr>
+						</table>
+					</div>
+					<!--If Notified Courses is Selected From the Dropdown List, This is the Schedule That is Shown on Devices Other Than Mobile-->
 					<table class="notified-schedule" hidden>
 						<tr>
 							<th>Course Name</th>
@@ -225,8 +208,8 @@
 					</table>
 				</div> <!--End of Right Column-->
 			</div> <!--End of Row-->
-		</section>
-		<!--Section That Displays Payments That are Due (Left Column) and Holds (Right Column)-->
+		</section> <!--End of main-section
+		<!--Section That Displays Payments That Are Due (Left Column) and Holds (Right Column)-->
 		<section class="payment-hold-section">
 			<div class="row">
 				<!--Column That Displays Amount due on Payments-->
